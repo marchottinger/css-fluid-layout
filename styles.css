@@ -5,6 +5,52 @@
   --ref-slope: 0.02;
   
   /* -------------------------------------------- */
+  /* Typesetting                                  */
+  /* -------------------------------------------- */
+  /* Many variables affect readability and the overall balance of the design.
+  * Font family, font weight, letter spacing, line height and vertical margins are among the most
+  * important ones.
+  * ---------------------------------------------
+  * Properties of the font shorthand that are set in the Type scale are the following :
+  * font-style font-weight font-stretch font-size/line-height font-family.
+  * -------------------------------------------- 
+  * - Font pairing (combining fonts from different typefaces) has a huge impact on the overall design.
+  * Too many type sizes and styles at once can wreck any layout. A typographic scale has a limited
+  * set of type sizes that work well together along with the layout grid.
+  * These sizes and styles were developed to balance content density and reading comfort under typical
+  * usage conditions.
+  * ---------------------------------------------
+  * - Font size
+  * Font size can be defined with a type scale. Furthermore, it is advised to specify matching margins for each font-size.
+  * ---------------------------------------------
+  * - Font Weight
+  * Applying font weight is a good way to create a hierarchy in a text.
+  * It is possible to pair typefaces with different font weights to achieve great contrast between titles and text.
+  * ---------------------------------------------
+  * - Letter Spacing - Tracking
+  * Letter spacing is important because it gives the reader a sense of fluidity when reading.
+  * ---------------------------------------------
+  * - Pacing - Line Height (space between lines)
+  * To achieve proper readability and appropriate pacing, line heights have been determined based
+  * on each style’s individual size and weight.
+  * ---------------------------------------------
+  * - Pacing - Vertical Margins (space between text blocks)
+  * The idea of pacing is thightly linked to the space between text blocks.
+  * It is important to use fractional spacing to achieve some sort of consitency when appliying space between each block.
+  * ---------------------------------------------
+  * - Optical compensation - Horizontal Margins
+  * Negative margins are often needed to compensate the offset for larger type sizes.
+  * ---------------------------------------------
+  * - Colors and Contrast
+  * Contrast can be achieved with subtle color differences between titles and body text.
+  * ---------------------------------------------
+  * - Remarks - Line Length
+  * Consider this advice on readability and line length from the Baymard Institute:
+  * “You should have around 60 characters per line if you want a good reading experience.
+  * Having the right amount of characters on each line is key to the readability of your text.”
+  */
+
+  /* -------------------------------------------- */
   /* Typesetting - Primary (headings) vars        */
   /* -------------------------------------------- */
   --primary-font-family: "Helvetica", sans-serif;
@@ -118,18 +164,14 @@ p {
 
 .stack > * + * {
   margin-block-start: 4rem;
-  border: 2px solid green;
-  background: rgba(0, 255, 0, .06);
 }
+
 .flow > * + * {
   margin-block-start: var(--flow-space, .5em);
-  border: 2px solid red;
-  background: rgba(255, 0, 0, .06);
 }
+
 .flow > * + p {
   margin-block-start: var(--flow-space, .125em);
-  border: 2px solid blue;
-  background: rgba(0, 0, 255, .06);
 }
 
 /* Juste pour l'exemple */
